@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#welcome {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20%;
+    animation: fadeOutUp 3s forwards;
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+#header, #main {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.show {
+    display: block;
+    opacity: 1;
+}
